@@ -18,7 +18,7 @@ public class CursoController {
     @Autowired
     private CursoService cursoService;
 
-    @GetMapping("/frmMantCurss")
+    @GetMapping("/frmMantCursos")
     public String frmMantCurso(Model model){
         model.addAttribute("listaCursos",cursoService.listarCursos());
         return "Curso/frmMantCurso";
